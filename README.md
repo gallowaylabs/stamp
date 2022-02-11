@@ -2,10 +2,11 @@
 
 A Discord chat interaction (slash command) for generating user-timestamps. 
 
+![Stamp command in action](media/example.png)
 
 ## Adding this interaction to your server
 [Click here](https://discord.com/api/oauth2/authorize?client_id=941136915963445328&scope=applications.commands) to authorize
-this interaction on your server. No further setup is required as this is the bot instance centrally hosted by us. 
+this interaction on your server. No further setup is required as this is the bot instance centrally hosted by us (gallowaylabs). 
 
 
 ## Setting up your own version
