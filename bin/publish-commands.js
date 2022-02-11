@@ -50,35 +50,35 @@ const commands = [
         "type": 1,
         "description": "Stamp commands that only respond to you",
         "options": [
-            {
-                "name": "configure",
-                "description": "Set default timezone and date format",
-                "type": 1,
-                "options": [
-                    {
-                        "name": "timezone",
-                        "description": "Timezone name (EST) or GMT offset (GMT-05:00)",
-                        "type": 3,
-                        "required": true
-                    },
-                    {
-                        "name": "date_format",
-                        "description": "Does the date come first or the month?",
-                        "type": 3,
-                        "required": true,
-                        "choices": [
-                            {
-                                "name": "Month/Day/Year",
-                                "value": "MDY"
-                            },
-                            {
-                                "name": "Day/Month/Year",
-                                "value": "DMY"
-                            }
-                        ]
-                    }
-                ]
-            },
+            // {
+            //     "name": "configure",
+            //     "description": "Set default timezone and date format",
+            //     "type": 1,
+            //     "options": [
+            //         {
+            //             "name": "timezone",
+            //             "description": "Timezone name (EST) or GMT offset (GMT-05:00)",
+            //             "type": 3,
+            //             "required": true
+            //         },
+            //         {
+            //             "name": "date_format",
+            //             "description": "Does the date come first or the month?",
+            //             "type": 3,
+            //             "required": true,
+            //             "choices": [
+            //                 {
+            //                     "name": "Month/Day/Year",
+            //                     "value": "MDY"
+            //                 },
+            //                 {
+            //                     "name": "Day/Month/Year",
+            //                     "value": "DMY"
+            //                 }
+            //             ]
+            //         }
+            //     ]
+            // },
             {
                 "name": "generate",
                 "description": "Generate a timestamp string for copy/pasting elsewhere",

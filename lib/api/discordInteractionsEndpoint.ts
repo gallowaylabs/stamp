@@ -42,8 +42,8 @@ export const handler = async (event: APIGatewayProxyEventV2): Promise<APIGateway
             if (body.data.options[0].name == 'help') {
                 content = "A bot for generating Discord timestamps: <t:1641016800:f> from natural language input \n" +
                     "Example messages that can be parsed: \n" +
-                    "\"Tomorrow at 5pm EST\", \"May 4, 2023 3:45pm CEST\", \"at 4:45 pm PDT\" \n" +
-                    "Note: Date format defaults to M/D/Y if it's ambiguous\n\n" +
+                    "\"Tomorrow at 5pm EST\", \"May 4, 2023 3:45pm CEST\", \"at 4:45 pm GMT-5\" \n" +
+                    "Note: Date format defaults to M/D/Y if it is ambiguous\n\n" +
                     "**Commands** \n" +
                     "`/timestamp [output format] [message]` " +
                     "Parses the message and replaces any mentioned date/time with a Discord timestamp.\n" +

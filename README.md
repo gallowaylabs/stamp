@@ -1,6 +1,6 @@
 # Stamp
 
-A Discord chat interaction ("slash command") for generating Discord localized timestamps. 
+A Discord chat interaction (slash command) for generating user-timestamps. 
 
 
 ## Adding this interaction to your server
@@ -10,8 +10,13 @@ this interaction on your server. No further setup is required as this is the bot
 
 ## Setting up your own version
 
-This application is tightly coupled to AWS; it uses CDK, an AWS-flavored Terraform tool, to deploy resources and uses 
-AWS-specific features like Lambda and ApiGateway. 
+This application is tightly coupled to AWS; it uses [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html), 
+an AWS-flavored Terraform tool, to deploy resources and uses AWS-specific features like Lambda and ApiGateway. 
+
+Pre-requisites:
+- An AWS account
+- [AWS CLI V2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) installed and configured
+- Node >16
 
 1. Install AWS CDK globally
 ```shell
@@ -19,7 +24,7 @@ npm install -g aws-cdk
 ```
 
 2. Install dependencies
-```
+```shell
 npm i
 ```
 
@@ -47,7 +52,7 @@ To add your newly created interaction to a server that you administer:
 4. Authorize the application
 5. You can now use `/stamp` and `/timestamp` commands in the server you authorized
 
-## Useful cdk commands
+## Useful commands
 
  * `npm run build`   compile typescript to js
  * `npm run watch`   watch for changes and compile
